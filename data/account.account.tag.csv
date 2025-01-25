@@ -1,0 +1,25 @@
+id,country_id/id,name,applicability,active,tax_negate
+account_tag_retention_tax_vendor_account,base.bd,Withholding Vendor Tax Account,accounts,TRUE,FALSE
+account_tag_dividend_account,base.bd,Dividend Account,accounts,TRUE,FALSE
+account_tag_retention_tax_dividend_account,base.bd,Withholding Dividend Tax Account,accounts,TRUE,FALSE
+account_tag_retention_tax_employees_account,base.bd,Withholding Employees Tax Account,accounts,TRUE,FALSE
+account_tag_retention_tax_customers_account,base.bd,Withholding Customers Tax Account,accounts,TRUE,FALSE
+account_account_tag_9,base.bd,-VAT SALES (BASE),taxes,TRUE,TRUE
+account_account_tag_10,base.bd,+VAT SALES (BASE),taxes,TRUE,FALSE
+account_account_tag_11,base.bd,-VAT SALES,taxes,TRUE,TRUE
+account_account_tag_12,base.bd,+VAT SALES,taxes,TRUE,FALSE
+account_account_tag_15,base.bd,-VAT Exempt SALES (BASE),taxes,TRUE,TRUE
+account_account_tag_16,base.bd,+VAT Exempt SALES (BASE),taxes,TRUE,FALSE
+account_account_tag_17,base.bd,-VAT Inputs 17%,taxes,TRUE,TRUE
+account_account_tag_18,base.bd,+VAT Inputs 17%,taxes,TRUE,FALSE
+account_account_tag_19,base.bd,-VAT Inputs PA 16%,taxes,TRUE,TRUE
+account_account_tag_20,base.bd,+VAT Inputs PA 16%,taxes,TRUE,FALSE
+account_account_tag_21,base.bd,-VAT Inputs 2/3,taxes,TRUE,TRUE
+account_account_tag_22,base.bd,+VAT Inputs 2/3,taxes,TRUE,FALSE
+account_account_tag_23,base.bd,-VAT Inputs 1/4,taxes,TRUE,TRUE
+account_account_tag_24,base.bd,+VAT Inputs 1/4,taxes,TRUE,FALSE
+account_account_tag_25,base.bd,-VAT Inputs (fixed assets),taxes,TRUE,TRUE
+account_account_tag_26,base.bd,+VAT Inputs (fixed assets),taxes,TRUE,FALSE
+account_tags_tax_c_exempt,base.bd,Bangladesh Corporate Tax - Exempt Income,taxes,TRUE,FALSE
+account_tags_tax_c_cog,base.bd,Bangladesh Corporate Tax - Cost of Goods Sold,taxes,TRUE,FALSE
+account_tags_tax_c_exp,base.bd,Bangladesh Corporate Tax - Expense,taxes,TRUE,FALSE
