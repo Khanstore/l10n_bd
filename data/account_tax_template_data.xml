@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Sales Taxes -->
-    <!--<record id="bd_vat_sales_17" model="account.tax.template">
+    <record id="bd_vat_sales_17" model="account.tax.template">
         <field name="sequence">1</field>
         <field name="description">17%</field>
         <field name="name">VAT Sales</field>
@@ -143,7 +143,7 @@
             }),
         ]"/>
     </record>
-    &lt;!&ndash; Purchase Taxes &ndash;&gt;
+    <!-- Purchase Taxes -->
     <record id="bd_vat_inputs_17" model="account.tax.template">
         <field name="sequence">2</field>
         <field name="description">17%</field>
@@ -178,7 +178,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="chart_template_id" ref="bd_chart_template"/>
-        <field name="tax_group_id" ref="tax_group_vat_75"/>
+        <field name="tax_group_id" ref="tax_group_vat_16"/>
         <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
             (0,0, {'repartition_type': 'base'}),
             (0,0, {
@@ -402,5 +402,5 @@
                 'account_id': ref('bd_account_111110'),
             }),
         ]"/>
-    </record>-->
+    </record>
 </odoo>

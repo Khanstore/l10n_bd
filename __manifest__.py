@@ -17,11 +17,9 @@ This module consists of:
     'website': 'http://www.khan-store.com/shop',
     'depends': ['l10n_multilang'],
     'data': [
-        # 'data/data_account_type.xml',
-        'data/account.account.tag.csv',
         'data/account_chart_template_data.xml',
         'data/account_tax_group_data.xml',
-
+        'data/account_account_tag.xml',
         'data/account.account.template.csv',
         'data/account.group.template.csv',
         'data/account_tax_report_data.xml',
