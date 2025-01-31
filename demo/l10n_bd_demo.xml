@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+        <record id="KhanStore" model="res.partner">
+            <field name="name">Khan Store</field>
+            <field name="is_company">1</field>
+            <field name="street">Shop # C-1, level # 0</field>
+            <field name="zip">1000</field>
+            <field name="city">Noya Paltan</field>
+            <field name="state_id" ref="base.bd.Dhaka"/>
+            <field name="country_id" ref="base.bd"/>
+            <field name="phone">01720569256</field>
+            <field name="website">http://www.khan-store.com</field>
+            <field name="email">khan.store.digital@gmail.com</field>
+        </record>
+
+        <record id="res_partner_address_1" model="res.partner">
+            <field name="name">SM Ashraf</field>
+            <field name="parent_id" ref="KhanStore"/>
+            <field name="email">dmashraf@gmail.com</field>
+            <field name="active">1</field>
+            <field name="type">contact</field>
+            <field name="street">5/4 West Malibug</field>
+            <field name="zip">1000</field>
+            <field name="city">Malibug</field>
+            <field name="state_id" ref="base.bd.Dhaka"/>
+            <field name="country_id" ref="base.bd"/>
+        </record>
+    </data>
+</odoo>

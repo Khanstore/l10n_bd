@@ -1,0 +1,2 @@
+id,name,code,iso_code,url_code,direction,active,date_format,decimal_point,id,week_start,flag_image,grouping,thousands_sep,time_format
+base.lang_bn_BD,Bangla / বাংলা,bn_BD,bn_BD,bn_BD,Left-to-Right,TRUE,%A %d %b %Y,.,base.lang_bn_BD,Sunday,,[],,%I:%M:%S
