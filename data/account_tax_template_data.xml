@@ -33,38 +33,6 @@
             }),
         ]"/>
     </record>
-    <record id="bd_vat_pa_sales_17" model="account.tax.template">
-        <field name="sequence">8</field>
-        <field name="description">17%</field>
-        <field name="name">VAT PA Sales</field>
-        <field name="amount">17</field>
-        <field name="amount_type">percent</field>
-        <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="bd_chart_template"/>
-        <field name="tax_group_id" ref="tax_group_vat_17"/>
-        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
-            (0,0, {
-                'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('account_tax_report_line_out_base_tag')],
-            }),
-            (0,0, {
-                'repartition_type': 'tax',
-                'account_id': ref('bd_account_111120'),
-                'plus_report_expression_ids': [ref('account_tax_report_line_out_balance_pa_tag')],
-            }),
-        ]"/>
-        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
-            (0,0, {
-                'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('account_tax_report_line_out_base_tag')],
-            }),
-            (0,0, {
-                'repartition_type': 'tax',
-                'account_id': ref('bd_account_111120'),
-                'minus_report_expression_ids': [ref('account_tax_report_line_out_balance_pa_tag')],
-            }),
-        ]"/>
-    </record>
     <record id="bd_vat_sales_exempt" model="account.tax.template">
         <field name="sequence">9</field>
         <field name="description">0%</field>
@@ -167,32 +135,6 @@
                 'repartition_type': 'tax',
                 'account_id': ref('bd_account_101310'),
                 'minus_report_expression_ids': [ref('account_tax_report_line_in_balance_17_tag')],
-            }),
-        ]"/>
-    </record>
-    <record id="bd_vat_pa_purchase_16" model="account.tax.template">
-        <field name="sequence">3</field>
-        <field name="description">16%</field>
-        <field name="name">VAT 16% (PA)</field>
-        <field name="amount">16</field>
-        <field name="amount_type">percent</field>
-        <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="bd_chart_template"/>
-        <field name="tax_group_id" ref="tax_group_vat_16"/>
-        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
-            (0,0, {'repartition_type': 'base'}),
-            (0,0, {
-                'repartition_type': 'tax',
-                'account_id': ref('bd_account_101340'),
-                'plus_report_expression_ids': [ref('account_tax_report_line_in_balance_pa_16_tag')],
-            }),
-        ]"/>
-        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
-            (0,0, {'repartition_type': 'base'}),
-            (0,0, {
-                'repartition_type': 'tax',
-                'account_id': ref('bd_account_101340'),
-                'minus_report_expression_ids': [ref('account_tax_report_line_in_balance_pa_16_tag')],
             }),
         ]"/>
     </record>

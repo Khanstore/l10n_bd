@@ -35,11 +35,11 @@
         <field name="chart_template_id" ref="bd_chart_template"/>
     </record>
 
-    <record id="account_fiscal_position_import_export_01" model="account.fiscal.position.tax.template">
-        <field name="tax_src_id" ref="bd_vat_sales_10"/>
-        <field name="tax_dest_id" ref="bd_vat_sales_exempt"/>
-        <field name="position_id" ref="account_fiscal_position_import_export"/>
-    </record>
+<!--    <record id="account_fiscal_position_import_export_01" model="account.fiscal.position.tax.template">-->
+<!--        <field name="tax_src_id" ref="bd_vat_sales_10"/>-->
+<!--        <field name="tax_dest_id" ref="bd_vat_sales_exempt"/>-->
+<!--        <field name="position_id" ref="account_fiscal_position_import_export"/>-->
+<!--    </record>-->
 
     <record id="account_fiscal_position_import_export_02" model="account.fiscal.position.tax.template">
         <field name="tax_src_id" ref="bd_vat_inputs_17"/>
@@ -70,11 +70,11 @@
         <field name="chart_template_id" ref="bd_chart_template"/>
     </record>
 
-    <record id="account_fiscal_position_vat_zero_01" model="account.fiscal.position.tax.template">
-        <field name="tax_src_id" ref="bd_vat_sales_10"/>
-        <field name="tax_dest_id" ref="bd_vat_sales_zero"/>
-        <field name="position_id" ref="account_fiscal_position_vat_zero"/>
-    </record>
+<!--    <record id="account_fiscal_position_vat_zero_01" model="account.fiscal.position.tax.template">-->
+<!--        <field name="tax_src_id" ref="bd_vat_sales_10"/>-->
+<!--        <field name="tax_dest_id" ref="bd_vat_sales_zero"/>-->
+<!--        <field name="position_id" ref="account_fiscal_position_vat_zero"/>-->
+<!--    </record>-->
 
     <record id="account_fiscal_position_vat_zero_02" model="account.fiscal.position.tax.template">
         <field name="tax_src_id" ref="bd_vat_inputs_17"/>
