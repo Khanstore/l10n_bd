@@ -5,7 +5,7 @@
 
 {
     'name': 'BD - Accounting',
-    'version': '1.0',
+    'version': '15.0.1.0.0',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """
 This is the latest BD Odoo localisation necessary to run Odoo accounting for BD SME's with:
