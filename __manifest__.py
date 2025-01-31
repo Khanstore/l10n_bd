@@ -1,34 +1,21 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 {
     'name': 'Bangladesh - Accounting',
-    'version': '16.0.1.0.0',
+    'website': 'https://www.odoo.com/documentation/17.0/applications/finance/fiscal_localizations.html',
+    'icon': '/account/static/description/l10n.png',
+    'countries': ['bd'],
+    'version': '1.0',
     'category': 'Accounting/Localizations/Account Charts',
-    'description': """
-This is the latest basic Bangladeshi localisation necessary to run Odoo in Bangladesh:
-======================================================================================
-
-This module consists of:
- - Generic Bangladesh Chart of Accounts
- - Taxes and tax report
- - Multiple Fiscal positions
- """,
-    'website': 'http://www.khan-store.com/shop',
-    'depends': ['l10n_multilang'],
+    'description': ' This is the base module to manage chart of accounts and localization for the Bangladesh ',
+    'depends': [
+        'account',
+    ],
+    'auto_install': ['account'],
     'data': [
-        # 'data/data_account_type.xml',
         'data/account.account.tag.csv',
-        'data/account_chart_template_data.xml',
-        'data/account_tax_group_data.xml',
-
-        'data/account.account.template.csv',
-        'data/account.group.template.csv',
+        'data/res.country.state.csv',
         'data/account_tax_report_data.xml',
-        'data/account_tax_template_data.xml',
-        'data/fiscal_templates_data.xml',
-        'data/account_chart_template_post_data.xml',
-        'data/account_chart_template_configure_data.xml',
+        'views/menu_items.xml',
     ],
     'demo': [
         'demo/demo_company.xml',
