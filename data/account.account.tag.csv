@@ -1,4 +1,4 @@
-id,country_id/id,name,applicability,active,tax_negate
+id/id,country_id/id,name,applicability,active,tax_negate
 account_tag_retention_tax_vendor_account,base.bd,Withholding Vendor Tax Account,accounts,TRUE,FALSE
 account_tag_dividend_account,base.bd,Dividend Account,accounts,TRUE,FALSE
 account_tag_retention_tax_dividend_account,base.bd,Withholding Dividend Tax Account,accounts,TRUE,FALSE
