@@ -11,16 +11,25 @@ class AccountChartTemplate(models.AbstractModel):
         return {
             'property_account_receivable_id': 'l10n_bd_100201',
             'property_account_payable_id': 'l10n_bd_200101',
-            'property_account_expense_categ_id': 'l10n_bd_500200',
-            'property_account_income_categ_id': 'l10n_bd_400100'
+            'property_account_expense_categ_id': 'l10n_bd_500101',
+            'property_account_income_categ_id': 'l10n_bd_400100',
+
+            'property_stock_account_input_categ_id': 'l10n_bd_100503',
+            'property_stock_account_output_categ_id': 'l10n_bd_100504',
+            'property_stock_valuation_account_id': 'l10n_bd_100502',
+            # 'property_stock_account_production_cost_id': 'cost_of_production',
         }
 
     @template('bd', 'res.company')
     def _get_bd_res_company(self):
         return {
             self.env.company.id: {
+                'fiscalyear_last_day':30,
+                'fiscalyear_last_month':'6',
+                'anglo_saxon_accounting': True,
+                'display_invoice_amount_total_words': True,
                 'account_fiscal_country_id': 'base.bd',
-                'bank_account_code_prefix': '10010',
+                'bank_account_code_prefix': '1001',
                 'cash_account_code_prefix': '10010',
                 'account_default_pos_receivable_account_id': 'l10n_bd_100202',
                 'account_journal_suspense_account_id': 'l10n_bd_100102',
@@ -31,8 +40,8 @@ class AccountChartTemplate(models.AbstractModel):
                 'transfer_account_id': 'l10n_bd_100101',
                 'account_journal_early_pay_discount_loss_account_id': 'l10n_bd_501107',
                 'account_journal_early_pay_discount_gain_account_id': 'l10n_bd_400304',
-                'account_sale_tax_id': 'VAT_S_IN_BD_10',
-                'account_purchase_tax_id': 'VAT_P_IN_BD_10'
+                'account_sale_tax_id': 'VAT_S_IN_BD_75',
+                'account_purchase_tax_id': 'VAT_P_IN_BD_75'
             },
         }
 

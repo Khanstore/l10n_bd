@@ -1,0 +1,5 @@
+id,name,bic,street,street2,city,state:id,zip,country:id,phone,email
+__export__.bank_bd_dbbl,Dutch Bangla Bank Ltd,DBBL,Bijoynagar Road,,Kakrail,__export__.state_bd_dhaka,1000,base.bd,0192929,dbbl@dbbl.com
+__export__.bank_bd_uttara,Uttara Bank PLC,UBL,Fakirapul,,,__export__.state_bd_dhaka,1000,base.bd,0192929,ubl@dbbl.com
+__export__.bank_bd_comunity,Community Bank PLC,CBL,Dainik bangla,Motijheel,,__export__.state_bd_dhaka,1000,base.bd,0192929,ubl@dbbl.com
+__export__.bank_bd_sonali,Sonali Bank PLC,SBL,,Motijheel,,__export__.state_bd_dhaka,1000,base.bd,0192929,ubl@dbbl.com
